@@ -25,10 +25,19 @@ const signup = async function (req, res, next) {
         [username, email, hashedPassword]
       );
       
-      return res.json({
-        message: "Signup successfull",
-        user,
+      // return res.json({
+      //   message: "Signup successfull",
+      //   user,
+      // });
+      return res.status(201).json({
+        message: 'Signup successful',
+        user: {
+          id: user.rows[0].id,
+          username: user.rows[0].username,
+          email: user.rows[0].email
+        }
       });
+      
     } catch (error) {
       next(error);
     }
