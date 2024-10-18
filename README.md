@@ -34,7 +34,7 @@ Clone The repo and cd into your base folder
 
 git clone https://github.com/SarkiPraizy/User_management.git
 
-cd <base folder>
+• cd <base folder>
 
 Run "npm install" to install all the dependencies
 
