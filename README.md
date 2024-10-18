@@ -18,7 +18,7 @@ Click on the link below to read full documentation. And automatically test api w
 
 TECH STACK
 
-Nodejs, express
+Nodejs, express, javascript
 
 ##
 
