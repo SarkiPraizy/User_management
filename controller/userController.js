@@ -25,10 +25,6 @@ const signup = async function (req, res, next) {
         [username, email, hashedPassword]
       );
       
-      // return res.json({
-      //   message: "Signup successfull",
-      //   user,
-      // });
       return res.status(201).json({
         message: 'Signup successful',
         user: {
